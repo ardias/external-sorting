@@ -116,9 +116,6 @@ public class LineSorter {
             while (pq.size() > 0)
              {
                  PeekableBufferedReader take = pq.remove();
-                 if(take == null) {
-                     continue;
-                 }
                  String line = take.pop();
                  if(line == null) {
                      take.close();
